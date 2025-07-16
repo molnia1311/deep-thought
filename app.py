@@ -54,7 +54,7 @@ def main() -> None:
             {"role": "user", "content": text},
         ],
         temperature=0.3,
-        max_tokens=50,
+        max_tokens=1000,
     )
 
     summary = response.choices[0].message.content.strip()
